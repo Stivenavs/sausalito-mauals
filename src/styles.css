@@ -1,0 +1,190 @@
+/* Identidad visual: verde cafetal (base) + acento agua (cian) + acento tierra (ocre) */
+
+:root {
+  --bg: #ffffff;
+  --bg-surface: #f6f7f4;
+  --text: #16261d;
+  --text-muted: #55645c;
+  --border: #e3e6df;
+
+  --primary: #2f6b4f;
+  --primary-dark: #204a36;
+
+  --water: #2b7f9e;
+  --water-soft: #e4f2f6;
+  --clay: #b5652f;
+  --clay-soft: #f5e9df;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1d16;
+    --bg-surface: #16261d;
+    --text: #edf2ee;
+    --text-muted: #a9b6ae;
+    --border: #26362c;
+
+    --primary: #57b98a;
+    --primary-dark: #3fa877;
+
+    --water: #6fc4de;
+    --water-soft: #12303a;
+    --clay: #e0a06c;
+    --clay-soft: #33241a;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  color: var(--text);
+  line-height: 1.2;
+}
+
+/* Tipografía del contenido renderizado por ngx-markdown dentro de .manual-page */
+.manual-page markdown {
+  display: block;
+}
+
+.manual-page markdown h1 {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+
+.manual-page markdown h2 {
+  font-size: 1.5rem;
+  margin: 2.2rem 0 0.9rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--border);
+}
+
+.manual-page markdown h2:first-child {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.manual-page markdown h3 {
+  font-size: 1.15rem;
+  margin: 1.6rem 0 0.6rem;
+}
+
+.manual-page markdown p,
+.manual-page markdown li {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.manual-page markdown ul,
+.manual-page markdown ol {
+  padding-left: 1.3rem;
+}
+
+.manual-page markdown img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: block;
+}
+
+.manual-page markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  font-size: 0.94rem;
+}
+
+.manual-page markdown th,
+.manual-page markdown td {
+  border: 1px solid var(--border);
+  padding: 0.55rem 0.7rem;
+  text-align: left;
+}
+
+.manual-page markdown th {
+  background: var(--bg-surface);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.manual-page markdown blockquote {
+  margin: 1.2rem 0;
+  padding: 0.85rem 1.1rem;
+  border-left: 3px solid var(--water);
+  background: var(--water-soft);
+  border-radius: 0 8px 8px 0;
+  color: var(--text);
+}
+
+.manual-page markdown blockquote p {
+  margin: 0;
+}
+
+.manual-page markdown pre {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.manual-page markdown code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+}
+
+.manual-page markdown pre code {
+  background: none;
+}
+
+.manual-page markdown :not(pre) > code {
+  background: var(--bg-surface);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+.manual-page markdown .mermaid {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.manual-page markdown hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}

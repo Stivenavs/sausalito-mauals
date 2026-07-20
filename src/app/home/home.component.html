@@ -1,0 +1,45 @@
+<header class="hero">
+  <button class="logout-link" type="button" (click)="logout()">Cerrar sesión</button>
+  <div class="hero-inner">
+    <span class="eyebrow">Finca Sausalito · Sistema hidráulico</span>
+    <h1 class="hero-title">Manual Hidráulico</h1>
+    <p class="hero-subtitle">
+      Tratamiento y potabilización de agua — Finca Sausalito. Manual interno
+      con los pasos, fotos y fichas técnicas de cada etapa, desde la
+      bocatoma hasta la red de distribución.
+    </p>
+    <div class="buttons">
+      <a class="btn btn-primary" routerLink="/intro">Ver manual completo</a>
+      <a class="btn btn-outline" routerLink="/potabilizacion/planta">
+        Planta de potabilización
+      </a>
+    </div>
+  </div>
+
+  <svg class="water-line" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+    <path
+      d="M0,30 C150,55 300,5 450,30 C600,55 750,5 900,30 C1000,47 1100,20 1200,30 L1200,60 L0,60 Z"
+      fill="var(--bg)" />
+  </svg>
+</header>
+
+<main>
+  <section class="process-section">
+    <div class="process-heading">
+      <h2>El proceso, en seis etapas</h2>
+      <p>
+        Así fluye el agua a través del sistema. Cada etapa tiene su propio
+        manual con pasos de operación, fotos y fichas técnicas.
+      </p>
+    </div>
+    <div class="process-grid">
+      @for (stage of stages; track stage.n) {
+        <a [routerLink]="stage.path" class="stage-card">
+          <span class="stage-number">{{ stage.n }}</span>
+          <div class="stage-title">{{ stage.title }}</div>
+          <div class="stage-desc">{{ stage.desc }}</div>
+        </a>
+      }
+    </div>
+  </section>
+</main>

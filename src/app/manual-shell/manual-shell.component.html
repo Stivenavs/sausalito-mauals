@@ -1,0 +1,52 @@
+<div class="shell">
+  <header class="topbar">
+    <button
+      class="menu-btn"
+      type="button"
+      (click)="toggleSidenav()"
+      aria-label="Abrir menú de navegación">
+      <span></span><span></span><span></span>
+    </button>
+    <a routerLink="/" class="brand">Manual Hidráulico</a>
+    <button class="logout-btn" type="button" (click)="logout()">Cerrar sesión</button>
+  </header>
+
+  <div class="shell-body">
+    <nav class="sidenav" [class.open]="sidenavOpen()">
+      @for (cat of nav; track cat.label) {
+        <div class="nav-category">
+          <a
+            [routerLink]="cat.path"
+            routerLinkActive="active"
+            (click)="closeSidenav()"
+            class="nav-category-label">
+            {{ cat.label }}
+          </a>
+          @if (cat.processes) {
+            @for (process of cat.processes; track process.fragment) {
+              <a
+                [routerLink]="cat.path"
+                [fragment]="process.fragment"
+                (click)="closeSidenav()"
+                class="nav-link nav-link-process">
+                {{ process.title }}
+              </a>
+            }
+          }
+        </div>
+      }
+    </nav>
+
+    @if (sidenavOpen()) {
+      <button
+        class="sidenav-backdrop"
+        type="button"
+        aria-label="Cerrar menú"
+        (click)="closeSidenav()"></button>
+    }
+
+    <main class="content">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>
