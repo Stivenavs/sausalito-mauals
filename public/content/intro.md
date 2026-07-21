@@ -21,12 +21,12 @@ preventivo y la resolución de emergencias del sistema de agua de la finca.
 
 Usa el menú lateral para navegar por cada sección:
 
-- **Caja de registro** — control y registro de la fuente de agua.
-- **Represa** — almacenamiento de agua cruda antes del tratamiento.
-- **Potabilización** — floculación, filtración y desinfección.
-- **Planta de Hidroflow** — sistema de tratamiento Hidroflow.
-- **Planta de gas** — planta de gas de la finca.
-- **Calentadores** — calentadores de agua para los puntos de consumo.
-- **Mantenimiento** — rutinas de limpieza y calendario de mantenimiento.
-- **Emergencias** — qué hacer ante fallas, contaminación o desabastecimiento.
+- **[Caja de registro](/caja-registro/vista-general)** — control y registro de la fuente de agua.
+- **[Represa](/represa/vista-general)** — almacenamiento de agua cruda antes del tratamiento.
+- **[Potabilización](/potabilizacion/planta)** — floculación, filtración y desinfección.
+- **[Planta de Hidroflow](/hidroflow/planta)** — sistema de tratamiento Hidroflow.
+- **[Planta de gas](/gas/planta)** — planta de gas de la finca.
+- **[Calentadores](/calentadores/vista-general)** — calentadores de agua para los puntos de consumo.
+- **[Mantenimiento](/mantenimiento/rutinas)** — rutinas de limpieza y calendario de mantenimiento.
+- **[Emergencias](/emergencias/protocolos)** — qué hacer ante fallas, contaminación o desabastecimiento.
 

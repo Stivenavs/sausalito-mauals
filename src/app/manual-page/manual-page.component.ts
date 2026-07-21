@@ -1,6 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
+import { Location } from '@angular/common';
 import { MarkdownComponent } from 'ngx-markdown';
 
 @Component({
@@ -13,6 +14,7 @@ import { MarkdownComponent } from 'ngx-markdown';
 export class ManualPageComponent {
   private route = inject(ActivatedRoute);
   private titleService = inject(Title);
+  private location = inject(Location);
 
   filePath = signal('');
   private pendingFragment: string | null = null;
@@ -41,5 +43,9 @@ export class ManualPageComponent {
     }
     const el = document.getElementById(fragment);
     el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 }
