@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { PROCESS_STAGES } from '../shared/manual-nav.data';
+import { PROCESS_STAGES, QUICK_LINKS } from '../shared/manual-nav.data';
 import { AuthService } from '../auth/auth.service';
 
 @Component({
@@ -15,6 +15,7 @@ export class HomeComponent {
   private router = inject(Router);
 
   stages = PROCESS_STAGES;
+  quickLinks = QUICK_LINKS;
 
   logout() {
     this.authService.logout();

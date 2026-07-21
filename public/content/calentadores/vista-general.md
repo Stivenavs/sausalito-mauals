@@ -1,30 +1,26 @@
 # Calentadores
 
-> Reemplaza este texto de ejemplo con la información real de tu finca.
+## Mapa
 
-## Descripción general
+![Mapa de calentadores](/img/calentadores/mapa_calentadores.png)
 
-Describe los calentadores: tipo (eléctrico, gas, solar), cantidad y qué
-puntos de consumo abastecen.
+## Elementos
 
-## Ficha técnica
+- **Calentador casa principal** — inyecta agua caliente a la casa principal.
+- **Calentador dos baños** — inyecta agua caliente a los dos baños.
+- **Válvula gas calentador casa principal** — permite inyectar gas al calentador.
+- **Válvula gas calentador dos baños** — permite inyectar gas al calentador.
+- **Válvula agua fría calentador casa principal** — permite el paso de agua fría al calentador de la casa principal.
+- **Válvula agua fría calentador dos baños** — permite el paso de agua fría al calentador de los dos baños.
 
-| Equipo | Tipo | Capacidad | Ubicación |
-|---|---|---|---|
-| Calentador 1 | ___ | ___ | ___ |
-| Calentador 2 | ___ | ___ | ___ |
+## Solución de problemas
 
-## Foto de los calentadores
+**Si un calentador no enciende:**
 
-<!-- Copia tu foto a public/img/calentadores/calentadores.jpg y descomenta la línea -->
-<!-- ![Calentadores](/img/calentadores/calentadores.jpg) -->
+- Revisar el flujo de agua fría (suministro y válvula abierta).
+- Revisar las baterías del calentador.
+- Revisar la conexión eléctrica.
 
-## Pasos de operación
+**Si un calentador no calienta:**
 
-1. Paso 1
-2. Paso 2
-
-## Precauciones
-
-- Precaución 1
-- Precaución 2
+- Revisar la inyección de gas y que la válvula esté abierta.

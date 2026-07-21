@@ -31,17 +31,21 @@ component:
 
 - `src/app/manual-page/manual-page.component.ts` reads `file`/`title` off the active route's
   `data`, builds the path `content/<file>`, sets the document title, and renders it with
-  `<markdown mermaid [src]="filePath()">` (from `ngx-markdown`).
+  `<markdown [src]="filePath()">` (from `ngx-markdown`). It also scrolls to the route's
+  `fragment` (see "Sub-page process links" below) once the `(ready)` event fires, since content
+  loads asynchronously over HTTP and the target element may not exist yet at navigation time.
 - `src/app/app.routes.ts` maps each URL to a markdown file + title via route `data`. All manual
   routes are children of `ManualShellComponent` (topbar + collapsible sidenav); `HomeComponent`
   is the only route outside the shell.
-- Markdown supports GFM tables/blockquotes and fenced ` ```mermaid ` code blocks for diagrams.
-  Mermaid is loaded as a global script (see `scripts` in `angular.json`) and enabled per-render
-  via the `mermaid` attribute on `<markdown>`.
+- Markdown supports GFM tables/blockquotes. Mermaid diagram support was removed (it never
+  rendered readable text against the app's palette) — express flows/diagrams as plain
+  numbered/bulleted lists instead.
 - Images go in `public/img/<section>/`, downloadable files (PDFs, videos) in
-  `public/files/<section>/`, referenced from markdown with root-relative paths
-  (e.g. `/img/captacion/foo.jpg`). `public/content/anexos/planos-fotos-videos.md` documents
-  these conventions in-app and is the reference to check for the exact copy-paste snippets.
+  `public/files/<section>/`, referenced from markdown with root-relative paths:
+  `![Descripción](/img/<section>/foo.jpg)` for photos, `[Ver ficha (PDF)](/files/<section>/foo.pdf)`
+  for downloads, and a plain `<video controls><source src="/files/<section>/foo.mp4" .../></video>`
+  tag for local video files (prefer linking out to YouTube/Drive for large videos instead of
+  committing them).
 - `public/assets/` is for global/shared branding resources used by the app shell itself (logo,
   app icons) — not manual content. Reference from component templates/CSS with a root-relative
   path (e.g. `/assets/logo.svg`). Keep it separate from `public/img/`/`public/files/`, which are
@@ -58,6 +62,20 @@ component:
 `manual-nav.data.ts` is the single source of truth for navigation structure; it is independent
 of `app.routes.ts` and nothing enforces the two stay consistent, so check both when adding,
 renaming, or removing a page.
+
+`manual-nav.data.ts` also exports `QUICK_LINKS`, a short separate list (currently Mantenimiento
+and Emergencias) rendered as its own "Acceso rápido" card section on the home page
+(`home.component.html`), independent of the six `PROCESS_STAGES` cards above it.
+
+### Sub-page process links (sidebar anchors within a page)
+
+A `ManualCategory` in `manual-nav.data.ts` can have an optional `processes` array — each entry
+is `{ title, fragment }` and renders as an indented link under the category in the sidebar
+(`manual-shell.component.html`), navigating to the category's `path` with that `fragment`. The
+target markdown must contain a matching empty anchor right before the relevant heading, e.g.
+`<a id="proceso-a"></a>` before `### Some process` — plain heading text has no `id` (marked
+doesn't generate heading ids in this setup), so the anchor tag is what fragment navigation
+actually targets. See `public/content/caja-registro/vista-general.md` for the pattern.
 
 ### Static single-user auth (client-side only, no backend)
 
@@ -87,14 +105,14 @@ keep casual visitors out.
   `prefers-color-scheme: dark` override block. No Angular Material, no Tailwind.
 - Fonts (Fraunces for display/headings, IBM Plex Sans for body, IBM Plex Mono for
   labels/table headers) are loaded from Google Fonts in `src/index.html`.
-- Styling for *rendered markdown content* (headings, tables, blockquotes, code, `.mermaid`
-  containers) lives entirely in `src/styles.css` under the `.manual-page markdown ...`
-  selectors — component-level `.css` files only style app chrome (shell, nav, cards), never
-  rendered markdown.
+- Styling for *rendered markdown content* (headings, tables, blockquotes, code) lives entirely
+  in `src/styles.css` under the `.manual-page markdown ...` selectors — component-level `.css`
+  files only style app chrome (shell, nav, cards), never rendered markdown.
 
 ### App shell
 
-- `app.config.ts` wires up: router (with scroll position restoration + anchor scrolling),
-  `HttpClient`, and `provideMarkdown({ loader: HttpClient })`.
+- `app.config.ts` wires up: router (with scroll position restoration; router-level anchor
+  scrolling is deliberately off — `ManualPageComponent` handles fragment scrolling itself, see
+  above), `HttpClient`, and `provideMarkdown({ loader: HttpClient })`.
 - This is a pure client-side SPA (browser build only — no SSR/server builder configured in
   `angular.json`).

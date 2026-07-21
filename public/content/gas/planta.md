@@ -1,36 +1,34 @@
 # Planta de gas
 
-> Reemplaza este texto de ejemplo con la información real de tu finca.
+## Mapa
 
-## Descripción general
+![Mapa de la planta de gas](/img/gas/mapa_gas.png)
 
-Describe la planta de gas: tipo de gas, capacidad de almacenamiento y a
-qué equipos abastece.
+## Elementos
+
+- **Regulador sencillo** — inyecta gas a la tubería de todos los puntos.
+- **Regulador doble** — inyecta gas a la tubería de todos los puntos.
+- **Válvula casa** — inyecta gas a la casa.
+- **Válvula regulador doble** — controla la inyección de gas de la pipa del centro y la pipa de la derecha.
+- **Válvula regulador sencillo** — controla la inyección de gas de la pipa de la izquierda.
+- **Pipa izquierda** — cilindro contenedor de gas propano.
+- **Pipa centro** — cilindro contenedor de gas propano.
+- **Pipa derecha** — cilindro contenedor de gas propano.
 
 ## Ficha técnica
 
 | Parámetro | Valor |
 |---|---|
-| Tipo de gas | ___ |
-| Capacidad de almacenamiento | ___ |
-| Proveedor | ___ |
+| Tipo de gas | Propano |
+| Capacidad de almacenamiento | 3 pipas |
 
-## Foto de la planta
+## Manuales de proceso
 
-<!-- Copia tu foto a public/img/gas/planta.jpg y descomenta la línea -->
-<!-- ![Planta de gas](/img/gas/planta.jpg) -->
+<a id="proceso-inyeccion-gas"></a>
 
-## Pasos de operación
+### Inyección de gas
 
-1. Paso 1
-2. Paso 2
-
-## Precauciones
-
-- Precaución 1
-- Precaución 2
-
-## Ficha de seguridad
-
-<!-- Sube el PDF a public/files/gas/ficha-seguridad.pdf -->
-<!-- [Ver ficha de seguridad (PDF)](/files/gas/ficha-seguridad.pdf) -->
+1. Abrir la válvula del regulador doble.
+2. Para usar la pipa central, poner la válvula del regulador doble hacia abajo.
+3. Para usar la pipa derecha, poner la válvula del regulador doble hacia arriba.
+4. Para usar la pipa de la izquierda, abrir la válvula del regulador sencillo.

@@ -10,14 +10,12 @@ preventivo y la resolución de emergencias del sistema de agua de la finca.
 
 ## Alcance del sistema
 
-```mermaid
-flowchart TB
-    A[Caja de registro] --> B[Represa]
-    B --> C[Planta de potabilización]
-    C --> D[Planta de Hidroflow]
-    D --> E[Planta de gas]
-    E --> F[Calentadores]
-```
+1. Caja de registro
+2. Represa
+3. Planta de potabilización
+4. Planta de Hidroflow
+5. Planta de gas
+6. Calentadores
 
 ## Cómo usar este manual
 
@@ -31,9 +29,4 @@ Usa el menú lateral para navegar por cada sección:
 - **Calentadores** — calentadores de agua para los puntos de consumo.
 - **Mantenimiento** — rutinas de limpieza y calendario de mantenimiento.
 - **Emergencias** — qué hacer ante fallas, contaminación o desabastecimiento.
-- **Anexos** — planos, fotos, videos y fichas técnicas de equipos.
 
-> **Tip:** cada sección tiene espacio para fotos, diagramas y videos. Sube
-> tus archivos a `public/img/` (fotos) o `public/files/` (PDFs/videos) e
-> inclúyelos en cada página — mira la sección **Anexos** para ver ejemplos
-> listos para copiar.

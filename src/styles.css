@@ -173,28 +173,6 @@ h4 {
   border-radius: 4px;
 }
 
-.manual-page markdown .mermaid {
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1.25rem;
-  display: flex;
-  justify-content: center;
-  margin: 1.5rem 0;
-}
-
-.manual-page markdown .mermaid .nodeLabel,
-.manual-page markdown .mermaid .edgeLabel,
-.manual-page markdown .mermaid .label,
-.manual-page markdown .mermaid foreignObject div,
-.manual-page markdown .mermaid foreignObject span {
-  color: #16261d !important;
-}
-
-.manual-page markdown .mermaid text {
-  fill: #16261d !important;
-}
-
 .manual-page markdown hr {
   border: none;
   border-top: 1px solid var(--border);

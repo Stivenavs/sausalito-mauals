@@ -1,31 +1,38 @@
 # Planta de Hidroflow
 
-> Reemplaza este texto de ejemplo con la información real de tu finca.
+## Mapa
 
-## Descripción general
+![Mapa de la planta de Hidroflow](/img/hidroflow/mapa_hifroflow.png)
 
-Describe el sistema Hidroflow: qué hace, en qué punto del proceso se ubica
-y qué equipos incluye.
+## Elementos
 
-## Ficha técnica
+- **Tablero de Hidroflow** — controla las bombas.
+- **Bomba casa principal** — bomba azul, toma agua del tanque negro e inyecta hacia los calentadores.
+- **Bomba casa mayordomo** — bomba azul/verde, toma agua del tanque de concreto y la inyecta a la casa mayordomo.
+- **Válvula naranja plástica** — inyecta agua del tanque negro hacia la casa mayordomo.
+- **Válvula roja metálica** — inyecta el agua desde la bomba azul/verde hacia la casa mayordomo.
+- **Válvula metálica azul** — controla el flujo de agua de la casa principal.
 
-| Parámetro | Valor |
-|---|---|
-| Modelo / capacidad | ___ |
-| Ubicación | ___ |
+## Manuales de proceso
 
-## Foto del equipo
+<a id="proceso-suspension-casa-principal"></a>
 
-<!-- Copia tu foto a public/img/hidroflow/planta.jpg y descomenta la línea -->
-<!-- ![Planta de Hidroflow](/img/hidroflow/planta.jpg) -->
+### Suspensión de agua en casa principal
 
-## Pasos de operación
+1. Cerrar la válvula azul metálica para suspender el agua de la casa principal.
+2. Apagar la bomba desde el tablero de Hidroflow, girando la perilla #2 (bomba casa principal) para que apunte hacia la izquierda.
 
-1. Paso 1
-2. Paso 2
-3. Paso 3
+<a id="proceso-suspension-casa-mayordomo"></a>
 
-## Precauciones
+### Suspensión de agua en casa mayordomo
 
-- Precaución 1
-- Precaución 2
+1. Cerrar la válvula roja metálica para suspender el agua de la casa mayordomo.
+2. Cerrar la válvula naranja plástica para suspender el agua del tanque negro hacia la casa mayordomo.
+3. Apagar la bomba desde el tablero de Hidroflow, girando la perilla #1 (bomba casa mayordomo) para que apunte hacia la izquierda.
+
+<a id="proceso-suspension-total"></a>
+
+### Suspensión de agua total
+
+1. Realizar el proceso de Suspensión de agua en casa principal.
+2. Realizar el proceso de Suspensión de agua en casa mayordomo.

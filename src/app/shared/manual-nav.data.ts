@@ -33,14 +33,26 @@ export const MANUAL_NAV: ManualCategory[] = [
   {
     label: '3. Planta de potabilización',
     path: '/potabilizacion/planta',
+    processes: [
+      { title: 'Lavado de los filtros', fragment: 'proceso-lavado-filtros' },
+      { title: 'Dosificación', fragment: 'proceso-dosificacion' },
+    ],
   },
   {
     label: '4. Planta de Hidroflow',
     path: '/hidroflow/planta',
+    processes: [
+      { title: 'Suspensión de agua en casa principal', fragment: 'proceso-suspension-casa-principal' },
+      { title: 'Suspensión de agua en casa mayordomo', fragment: 'proceso-suspension-casa-mayordomo' },
+      { title: 'Suspensión de agua total', fragment: 'proceso-suspension-total' },
+    ],
   },
   {
     label: '5. Planta de gas',
     path: '/gas/planta',
+    processes: [
+      { title: 'Inyección de gas', fragment: 'proceso-inyeccion-gas' },
+    ],
   },
   {
     label: '6. Calentadores',
@@ -53,10 +65,6 @@ export const MANUAL_NAV: ManualCategory[] = [
   {
     label: '8. Emergencias',
     path: '/emergencias/protocolos',
-  },
-  {
-    label: '9. Anexos',
-    path: '/anexos/planos-fotos-videos',
   },
 ];
 
@@ -103,5 +111,24 @@ export const PROCESS_STAGES: ProcessStage[] = [
     title: 'Calentadores',
     desc: 'Calentadores de agua para los puntos de consumo.',
     path: '/calentadores/vista-general',
+  },
+];
+
+export interface QuickLink {
+  title: string;
+  desc: string;
+  path: string;
+}
+
+export const QUICK_LINKS: QuickLink[] = [
+  {
+    title: 'Mantenimiento',
+    desc: 'Rutinas de limpieza y calendario de revisiones.',
+    path: '/mantenimiento/rutinas',
+  },
+  {
+    title: 'Emergencias',
+    desc: 'Protocolos ante fallas o contaminación del agua.',
+    path: '/emergencias/protocolos',
   },
 ];

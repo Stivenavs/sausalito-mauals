@@ -42,4 +42,18 @@
       }
     </div>
   </section>
+
+  <section class="quick-section">
+    <div class="process-heading">
+      <h2>Acceso importante</h2>
+    </div>
+    <div class="quick-grid">
+      @for (link of quickLinks; track link.path) {
+        <a [routerLink]="link.path" class="quick-card">
+          <div class="stage-title">{{ link.title }}</div>
+          <div class="stage-desc">{{ link.desc }}</div>
+        </a>
+      }
+    </div>
+  </section>
 </main>

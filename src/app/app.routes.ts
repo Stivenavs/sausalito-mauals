@@ -58,11 +58,6 @@ export const routes: Routes = [
         component: ManualPageComponent,
         data: { file: 'emergencias/protocolos.md', title: 'Protocolos de emergencia' },
       },
-      {
-        path: 'anexos/planos-fotos-videos',
-        component: ManualPageComponent,
-        data: { file: 'anexos/planos-fotos-videos.md', title: 'Cómo agregar fotos, PDFs y videos' },
-      },
     ],
   },
   { path: '**', redirectTo: '' },
