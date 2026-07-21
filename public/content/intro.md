@@ -11,7 +11,7 @@ preventivo y la resolución de emergencias del sistema de agua de la finca.
 ## Alcance del sistema
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Caja de registro] --> B[Represa]
     B --> C[Planta de potabilización]
     C --> D[Planta de Hidroflow]

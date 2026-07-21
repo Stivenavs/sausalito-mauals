@@ -15,6 +15,7 @@ export class ManualPageComponent {
   private titleService = inject(Title);
 
   filePath = signal('');
+  private pendingFragment: string | null = null;
 
   constructor() {
     this.route.data.subscribe((data) => {
@@ -23,5 +24,22 @@ export class ManualPageComponent {
       this.filePath.set(`content/${file}`);
       this.titleService.setTitle(`${title} · Manual Hidráulico`);
     });
+
+    this.route.fragment.subscribe((fragment) => {
+      this.pendingFragment = fragment;
+      this.scrollToFragment(fragment);
+    });
+  }
+
+  onMarkdownReady(): void {
+    this.scrollToFragment(this.pendingFragment);
+  }
+
+  private scrollToFragment(fragment: string | null): void {
+    if (!fragment) {
+      return;
+    }
+    const el = document.getElementById(fragment);
+    el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
