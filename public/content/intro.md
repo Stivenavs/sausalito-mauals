@@ -8,6 +8,10 @@ hidráulico de la finca, incluyendo la planta de potabilización de agua.
 Servir como guía de referencia para la operación diaria, el mantenimiento
 preventivo y la resolución de emergencias del sistema de agua de la finca.
 
+## Diagrama de red
+
+![diagrama de red](/assets/diagrama.jpeg)
+
 ## Alcance del sistema
 
 1. Caja de registro
