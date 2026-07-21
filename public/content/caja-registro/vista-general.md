@@ -2,7 +2,7 @@
 
 ## Mapa
 
-![Mapa de la caja de registro](/img/caja-registro/mapa_caja_registro.jpeg)
+![Mapa de la caja de registro](/img/caja-registro/mapa_caja_registro.png)
 
 ## Elementos
 
@@ -17,7 +17,7 @@
 
 <a id="proceso-a"></a>
 
-### A. Inyectar agua del comité hacia la casa principal
+### Inyectar agua del comité hacia la casa principal
 
 1. Abrir válvula naranja.
 2. Abrir válvula roja metálica izquierda.
@@ -25,14 +25,14 @@
 
 <a id="proceso-b"></a>
 
-### B. Inyectar agua del comité hacia la casa mayordomo
+### Inyectar agua del comité hacia la casa mayordomo
 
 1. Abrir válvula naranja.
 2. Abrir válvula roja metálica centro.
 
 <a id="proceso-c"></a>
 
-### C. Llenar tanques con agua del comité
+### Llenar tanques con agua del comité
 
 1. Abrir válvula naranja.
 2. Abrir válvula roja metálica centro.

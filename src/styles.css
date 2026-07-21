@@ -183,6 +183,18 @@ h4 {
   margin: 1.5rem 0;
 }
 
+.manual-page markdown .mermaid .nodeLabel,
+.manual-page markdown .mermaid .edgeLabel,
+.manual-page markdown .mermaid .label,
+.manual-page markdown .mermaid foreignObject div,
+.manual-page markdown .mermaid foreignObject span {
+  color: #16261d !important;
+}
+
+.manual-page markdown .mermaid text {
+  fill: #16261d !important;
+}
+
 .manual-page markdown hr {
   border: none;
   border-top: 1px solid var(--border);

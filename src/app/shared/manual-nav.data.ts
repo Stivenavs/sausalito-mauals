@@ -18,14 +18,17 @@ export const MANUAL_NAV: ManualCategory[] = [
     label: '1. Caja de registro',
     path: '/caja-registro/vista-general',
     processes: [
-      { title: 'A. Inyectar agua del comité hacia la casa principal', fragment: 'proceso-a' },
-      { title: 'B. Inyectar agua del comité hacia la casa mayordomo', fragment: 'proceso-b' },
-      { title: 'C. Llenar tanques con agua del comité', fragment: 'proceso-c' },
+      { title: 'Inyectar agua del comité hacia la casa principal', fragment: 'proceso-a' },
+      { title: 'Inyectar agua del comité hacia la casa mayordomo', fragment: 'proceso-b' },
+      { title: 'Llenar tanques con agua del comité', fragment: 'proceso-c' },
     ],
   },
   {
     label: '2. Represa',
     path: '/represa/vista-general',
+    processes: [
+      { title: 'Lavado del filtro', fragment: 'proceso-lavado-filtro' },
+    ],
   },
   {
     label: '3. Planta de potabilización',
