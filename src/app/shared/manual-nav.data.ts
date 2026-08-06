@@ -59,11 +59,35 @@ export const MANUAL_NAV: ManualCategory[] = [
     path: '/calentadores/vista-general',
   },
   {
-    label: '7. Mantenimiento',
+    label: '10. Planta eléctrica',
+    path: '/electrica/planta-electrica',
+    processes: [
+      { title: 'Encender la planta ante un corte', fragment: 'proceso-encender-planta' },
+      { title: 'Devolver la operación a la red', fragment: 'proceso-devolver-red' },
+    ],
+  },
+  {
+    label: '9. Piscina',
+    path: '/piscina/piscina',
+    processes: [
+      { title: 'Rotación de piscina', fragment: 'proceso-rotacion-piscina' },
+      { title: 'Aspirar botando al desagüe', fragment: 'proceso-aspirar-botando' },
+      { title: 'Aspirar filtrando', fragment: 'proceso-aspirar-filtrando' },
+      { title: 'Lavado del filtro', fragment: 'proceso-lavado-filtro-piscina' },
+      { title: 'Pasar agua de piscina a jacuzzi', fragment: 'proceso-piscina-a-jacuzzi' },
+      { title: 'Pasar agua de jacuzzi a piscina', fragment: 'proceso-jacuzzi-a-piscina' },
+      { title: 'Calentar con calentador a gas', fragment: 'proceso-calentar-gas' },
+      { title: 'Calentar piscina con energía solar', fragment: 'proceso-calentar-solar-piscina' },
+      { title: 'Calentar jacuzzi con sistema solar', fragment: 'proceso-calentar-solar-jacuzzi' },
+      { title: 'Energizar con la planta eléctrica', fragment: 'proceso-planta-electrica' },
+    ],
+  },
+  {
+    label: '9. Mantenimiento',
     path: '/mantenimiento/rutinas',
   },
   {
-    label: '8. Emergencias',
+    label: '10. Emergencias',
     path: '/emergencias/protocolos',
   },
 ];
@@ -111,6 +135,18 @@ export const PROCESS_STAGES: ProcessStage[] = [
     title: 'Calentadores',
     desc: 'Calentadores de agua para los puntos de consumo.',
     path: '/calentadores/vista-general',
+  },
+  {
+    n: '07',
+    title: 'Planta eléctrica',
+    desc: 'suministro de energía de la finca.',
+    path: '/planta-electrica/planta-electrica',
+  },
+  {
+    n: '08',
+    title: 'Piscina y Jacuzzy',
+    desc: 'Rutinas de piscina y Jacuzzy.',
+    path: '/piscina/piscina',
   },
 ];
 

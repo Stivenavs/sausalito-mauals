@@ -2,7 +2,7 @@ import { Injectable, signal } from '@angular/core';
 
 const STORAGE_KEY = 'manual-hidraulico-auth';
 const USERNAME = 'sausalito';
-const PASSWORD = 'kafereterra';
+const PASSWORD = 'kafeterra';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {

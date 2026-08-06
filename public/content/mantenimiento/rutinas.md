@@ -6,7 +6,7 @@
 
 | Actividad | Frecuencia | Responsable |
 |---|---|---|
-| Limpieza de rejilla en bocatoma | Semanal | ___ |
+| Limpieza de rejilla en bocatoma | Semanal | Mario Marin |
 | Retrolavado de filtro | ___ | ___ |
 | Medición de cloro residual | Diaria | ___ |
 | Limpieza de tanques | ___ | ___ |

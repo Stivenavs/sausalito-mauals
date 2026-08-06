@@ -179,3 +179,14 @@
     padding: 0;
   }
 }
+
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 40px; /* ajusta según el tamaño de tu header/navbar */
+  width: auto;
+}
