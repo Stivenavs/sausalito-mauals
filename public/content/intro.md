@@ -3,6 +3,11 @@
 Este manual documenta el funcionamiento, operación y mantenimiento del sistema
 hidráulico de la finca, incluyendo la planta de potabilización de agua.
 
+## Descarga del manual
+
+<a href="assets/pdf/Manual.pdf" download class="pdf-button"> 📄 Descargar Manual en PDF </a>
+
+
 ## Objetivo
 
 Servir como guía de referencia para la operación diaria, el mantenimiento
@@ -10,7 +15,7 @@ preventivo y la resolución de emergencias del sistema de agua de la finca.
 
 ## Diagrama de red
 
-![diagrama de red](/assets/diagrama.jpeg)
+![diagrama de red](/assets/diagrama.png)
 
 ## Alcance del sistema
 
@@ -20,6 +25,10 @@ preventivo y la resolución de emergencias del sistema de agua de la finca.
 4. Planta de Hidroflow
 5. Planta de gas
 6. Calentadores
+7. Planta eléctrica
+8. Piscina y jacuzzy
+9. Mantenimiento
+10. Emergencias
 
 ## Cómo usar este manual
 
@@ -31,6 +40,8 @@ Usa el menú lateral para navegar por cada sección:
 - **[Planta de Hidroflow](/hidroflow/planta)** — sistema de tratamiento Hidroflow.
 - **[Planta de gas](/gas/planta)** — planta de gas de la finca.
 - **[Calentadores](/calentadores/vista-general)** — calentadores de agua para los puntos de consumo.
+- **[Planta eléctrica](/planta-electrica/planta-electrica)** — suministro de energía
+- **[Piscina y Jacuzzy](/piscina/piscina)** — rutinas de piscina y Jacuzzy.
 - **[Mantenimiento](/mantenimiento/rutinas)** — rutinas de limpieza y calendario de mantenimiento.
 - **[Emergencias](/emergencias/protocolos)** — qué hacer ante fallas, contaminación o desabastecimiento.
 

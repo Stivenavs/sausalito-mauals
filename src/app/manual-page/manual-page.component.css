@@ -24,3 +24,19 @@
   color: var(--primary);
   border-color: var(--primary);
 }
+
+
+.pdf-button {
+    display: inline-block;
+    background: #1976d2;
+    color: white !important;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.pdf-button:hover {
+    background: #1565c0;
+}

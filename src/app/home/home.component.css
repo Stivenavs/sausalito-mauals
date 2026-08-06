@@ -12,6 +12,24 @@
   text-align: left;
 }
 
+main {
+  position: relative;
+  overflow: hidden;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/logo-kafeterra.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .logout-link {
   position: absolute;
   top: 1.5rem;

@@ -49,6 +49,16 @@ export const routes: Routes = [
         data: { file: 'calentadores/vista-general.md', title: 'Calentadores' },
       },
       {
+        path: 'planta-electrica/planta-electrica',
+        component: ManualPageComponent,
+        data: { file: 'planta-electrica/planta-electrica.md', title: 'Planta Eléctrica' },
+      },
+      {
+        path: 'piscina/piscina',
+        component: ManualPageComponent,
+        data: { file: 'piscina/piscina.md', title: 'Piscina y Jacuzzy' },
+      },
+      {
         path: 'mantenimiento/rutinas',
         component: ManualPageComponent,
         data: { file: 'mantenimiento/rutinas.md', title: 'Rutinas de mantenimiento' },
