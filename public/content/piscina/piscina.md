@@ -13,7 +13,7 @@
 - **Llave “Fondo jacuzzi”** — succión desde el drenaje principal del jacuzzi.
 - **Llave “Bypass fondo jacuzzi”** — desvía la succión del fondo del jacuzzi.
 - **Llaves N.° 7, 10, 13, 14, 15** — llaves numeradas usadas en el calentamiento y en el cruce piscina-jacuzzi.
-- **Filtro (válvula multipuerto)** — posiciones: Filtrar (“Filter”), Lavado (“Backwash”), Enjuague (“Rinse”), Recircular, Desagüe, Cerrado (“Closed”).
+- **Filtro (válvula multiport)** — posiciones: Filtrar (“Filter”), Lavado (“Backwash”), Enjuague (“Rinse”), Recircular, Desagüe, Cerrado (“Closed”).
 - **Motor N.° 1** — bomba del jacuzzi.
 - **Motor N.° 2** — bomba de la piscina.
 - **Caja gris / planta eléctrica** — tablero con interruptores “REC” y “ABB” y piloto indicador de energía.
