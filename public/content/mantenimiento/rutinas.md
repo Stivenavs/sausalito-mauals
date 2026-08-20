@@ -1,29 +1,24 @@
 # Rutinas de mantenimiento
 
-> Reemplaza con las rutinas reales de tu sistema.
 
 ## Calendario de mantenimiento
 
 | Actividad | Frecuencia | Responsable |
 |---|---|---|
-| Limpieza de rejilla en bocatoma | Semanal | Mario Marin |
-| Retrolavado de filtro | ___ | ___ |
-| Medición de cloro residual | Diaria | ___ |
-| Limpieza de tanques | ___ | ___ |
-| Revisión de válvulas y tuberías | Mensual | ___ |
+| Limpieza de rejilla en bocatoma | Semanal | Encargado |
+| Retrolavado de filtro | Semanal (2 veces) | Encargado |
+| Medición de cloro residual | Diaria | Encargado |
+| Limpieza de tanques | Semestral | Mario Marin |
+| Revisión de válvulas y tuberías | Mensual | Encargado |
+| Cambio de rodamiento — Represa | Semestral (1 de agosto) | Mario Marin |
+| Revisión de filtros — Represa | Semestral (1 de febrero) | Mario Marin |
+| Colocar pastillas de cloro — tanque grande | Mensual (1 pastilla grande) | Encargado |
+| Colocar pastillas de cloro — tanque principal (cemento) | Cada 15 días (2 pastillas) | Encargado |
 
-## Procedimiento paso a paso
+## Plan de mantenimiento preventivo (visitas técnicas de Mario Marin)
 
-1. Paso 1
-2. Paso 2
-3. Paso 3
+Mario realiza dos visitas técnicas al año a la represa:
 
-## Herramientas y repuestos necesarios
+- **Agosto**: cambio de rodamiento de la represa.
+- **Febrero**: revisión de filtros de la represa.
 
-- Herramienta / repuesto 1
-- Herramienta / repuesto 2
-
-## Registro de mantenimientos realizados
-
-Lleva aquí un historial (fecha, actividad, responsable, observaciones) o
-enlaza tu planilla/Excel de registro.

@@ -1,30 +1,32 @@
 # Protocolos de emergencia
 
-> Reemplaza con los protocolos reales de tu finca.
 
 ## Contactos clave
 
 | Rol | Nombre | Teléfono |
 |---|---|---|
-| Responsable de la planta | ___ | ___ |
-| Proveedor de químicos | ___ | ___ |
-| Autoridad ambiental / acueducto local | ___ | ___ |
+| Experto en la planta de agua | Mario Marin | +57 315 205 62991 |
+| Experto en la planta de gas | Mario Marin | +57 315 205 62991 |
+| Experto en la planta de hidroflow | Mario Marin | +57 315 205 62991 |
+| Experto en calentadores | Mario Marin | +57 315 205 62991 |
+| Experto en la planta electrica | PROTELEC LTDA | (606) 3349660 - (606) 3349661 |
+| Experto en Piscina | Mario Marin | +57 315 205 62991 |
+| Ingeniero de sistemas | Jhon Stiven Restrepo | +57 321 865 7980 |
+
 
 ## Falla en el suministro de agua
 
-1. Paso 1
-2. Paso 2
+1. suspender servicio de agua ([ver procedimiento en Planta de Hidroflow](/hidroflow/planta#proceso-suspension-total))
+2. contactar a Mario Marin
 
 ## Sospecha de contaminación del agua
 
-1. Paso 1 — suspender consumo/distribución
-2. Paso 2 — tomar muestra
-3. Paso 3 — contactar a ___
+1. suspender consumo/distribución
+2. tomar muestra
+3. contactar a Mario Marin
 
 ## Falla de un equipo crítico (bomba, dosificador)
 
-1. Paso 1
-2. Paso 2
+1. Interrumpir el servicio eléctrico del equipo antes de manipularlo
+2. contactar a Mario Marin
 
-> **Importante:** documenta claramente cuándo se debe suspender el consumo
-> humano del agua mientras se soluciona el problema.

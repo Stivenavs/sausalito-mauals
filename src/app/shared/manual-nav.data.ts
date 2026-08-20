@@ -60,7 +60,7 @@ export const MANUAL_NAV: ManualCategory[] = [
   },
   {
     label: '10. Planta eléctrica',
-    path: '/electrica/planta-electrica',
+    path: '/planta-electrica/planta-electrica',
     processes: [
       { title: 'Encender la planta ante un corte', fragment: 'proceso-encender-planta' },
       { title: 'Devolver la operación a la red', fragment: 'proceso-devolver-red' },
