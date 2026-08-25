@@ -3,9 +3,12 @@
 Este manual documenta el funcionamiento, operación y mantenimiento del sistema
 hidráulico de la finca, incluyendo la planta de potabilización de agua.
 
-## Descarga del manual
+## Descarga del manual en PDF
 
 <a href="assets/pdf/Manual.pdf" download class="pdf-button"> 📄 Descargar Manual en PDF </a>
+
+## Descarga del manual en WORD
+<a href="assets/pdf/Manual.pdf" download class="pdf-button"> 📄 Descargar Manual en WORD </a>
 
 
 ## Objetivo

@@ -9,7 +9,7 @@
 | Experto en la planta de gas | Mario Marin | +57 315 205 62991 |
 | Experto en la planta de hidroflow | Mario Marin | +57 315 205 62991 |
 | Experto en calentadores | Mario Marin | +57 315 205 62991 |
-| Experto en la planta electrica | PROTELEC LTDA | (606) 3349660 - (606) 3349661 |
+| Experto en la planta electrica | Asistencia Diesel | +57 301 721 6220 |
 | Experto en Piscina | Mario Marin | +57 315 205 62991 |
 | Ingeniero de sistemas | Jhon Stiven Restrepo | +57 321 865 7980 |
 

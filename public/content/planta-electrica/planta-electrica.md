@@ -2,11 +2,12 @@
 
 ## Mapa
 
-![Mapa de la planta eléctrica](/img/electrica/planta-electrica.jpeg)
+![Mapa de la planta eléctrica](/img/electrica/planta-electrica.png)
 
 ## Elementos
 
 - **Planta de emergencia (generador)** — respaldo eléctrico de la finca.
+- **Tanque de diesel** — almacenamiento de combustible.
 - **Tablero de transferencia manual** — permite alternar entre red y generador.
 - **Totalizador del generador** — interruptor principal de la planta.
 - **Totalizador de Red** — interruptor principal de la red normal.
